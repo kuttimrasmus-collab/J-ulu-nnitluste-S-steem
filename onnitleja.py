@@ -49,7 +49,7 @@ def koosta_onnitlused(valitud_saajad=None):
 
 def saada_kiri(saaja, sisu):
     saatja_email = "kuttirasmus@gmail.com"
-    rakenduse_parool = "rassu190"
+    rakenduse_parool = "madis1"
 
     msg = EmailMessage()
     msg["From"] = saatja_email
@@ -65,4 +65,5 @@ def saada_kiri(saaja, sisu):
     except (smtplib.SMTPException, OSError) as e:
         print(f"E-kirja saatmine ebaõnnestus: {e}")
         return False
+
 
